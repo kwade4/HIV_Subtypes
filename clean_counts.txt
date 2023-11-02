@@ -1,0 +1,32 @@
+'02A3',
+'06_cpx',
+'02G',
+'BG',
+
+'01C', '02A', '22_01A1', '20_BG', '0107', '63_02A6', '140_0107', '07C', '07BC'])
+
+01B Yes *
+01BC Yes *
+01_AE Yes *
+02A1 Yes *
+02_AG Yes *
+07_BC Yes *
+08_BC Yes *
+11_cpx Yes *
+35_AD Yes *
+A1 No *
+A1C Yes *
+A1CD Yes *
+A1D Yes *
+A6 No *
+B No *
+BC Yes *
+BF Yes --------------------------
+BF1 Yes *
+C No *
+CD Yes *
+D No *
+F1 No *
+G No *
+O No *
+U No *
