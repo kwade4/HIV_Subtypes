@@ -1,6 +1,6 @@
 ## HIV-1 Subtype Classification 
 
-####Background 
+#### Background 
 
 * HIV-1 is classified into 4 groups: M, N, O, and P, and of these groups, group M is the most widespread and clinically relevant. 
 * Group M is subdivided into 9 distinct subtypes: A, B, C, D, F, G, H, J, K. 
@@ -57,7 +57,7 @@ At our meeting, we had discussed evaluating our models with and without applying
 
 #### Distribution of Tasks 
 
-#####Experiments 
+##### Experiments 
 * Processing data - Kaitlyn  
 * Vectorize DNA Sequences** - Gen and Kaitlyn 
     * Kaitlyn: k-mers, natural (and sub-sequence) vectors
@@ -66,7 +66,7 @@ At our meeting, we had discussed evaluating our models with and without applying
 * Machine Learning and Deep Learning: Kyle 
 * Multi-task Learning - ? 
 
-#####Paper
+##### Paper
 * Background and introduction: Kaitlyn 
 * Methods 
     * Data-processing: Kaitlyn 
@@ -78,7 +78,7 @@ At our meeting, we had discussed evaluating our models with and without applying
 
 #### Dataset and Availability 
 
-#####Dataset 
+##### Dataset 
 * `hiv-db.tar.xz`: contains 20,386 unprocessed sequences from 289 subtypes [LANL HIV Sequence Database](https://www.hiv.lanl.gov/components/sequence/HIV/search/search.html)
 * After processing there are 15,018 sequences and 28 subtypes. 
 * Each sequence is approx. 10,000 nucleotides.
@@ -87,7 +87,7 @@ At our meeting, we had discussed evaluating our models with and without applying
 * `labels.txt`: the subtype label 
     * The first line in `labels.txt` corresponds to the first sequence (line) in `hiv.txt`. 
 
-#####Scripts 
+##### Scripts 
 * `pre-process.py`: reads `hiv-db.tar.xz`
     * Removes sequences with unknown characters (eg: N) and subtypes with too few examples 
     * Creates `hiv.txt` and `labels.txt`
