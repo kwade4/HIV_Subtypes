@@ -11,7 +11,7 @@ def get_subtype_seqs(seqs):
     """
     Organize subtype sequences into a dictionary
     :param seqs: a list of FASTA sequences
-    :return: a dictionary of sequences where each
+    :return: a dictionary of sequences where each subtype is a key and the values is a list of sequences
     """
     count = 0
     raw_subtype_seqs = {}
