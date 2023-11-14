@@ -63,7 +63,7 @@ At our meeting, we had discussed evaluating our models with and without applying
     * Kaitlyn: k-mers, natural (and sub-sequence) vectors
     * Gen: Word2Vec, other natural language encoding methods 
 * Feature Selection: Alana 
-* Machine Learning and Deep Learning: Kyle 
+* Machine Learning and Deep Learning: Kyle - Done!
 * Multi-task Learning - ? 
 
 ##### Paper
@@ -93,3 +93,7 @@ At our meeting, we had discussed evaluating our models with and without applying
     * Creates `hiv.txt` and `labels.txt`
 
 `hiv.txt` can be used to vectorize the sequences.  
+
+* `classify.py`: take X and y as inputs, where X is a 2D feature vector and Y is a vector
+   * Before runing the codes, please first set configs, including output directory, possible hyper-parameters (optional)
+   * Output: Confusion metrices and numerical results, which will be saved in your output directory.
