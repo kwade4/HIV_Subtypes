@@ -97,3 +97,5 @@ At our meeting, we had discussed evaluating our models with and without applying
 * `classify.py`: take X and y as inputs, where X is a 2D feature vector and Y is a vector
    * Before runing the codes, please first set configs, including output directory, possible hyper-parameters (optional)
    * Output: Confusion metrices and numerical results, which will be saved in your output directory.
+
+* `feature_selection.ipynb`: specific instructions can be found in the ipython notebook
