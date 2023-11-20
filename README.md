@@ -98,4 +98,4 @@ At our meeting, we had discussed evaluating our models with and without applying
    * Before runing the codes, please first set configs, including output directory, possible hyper-parameters (optional)
    * Output: Confusion metrices and numerical results, which will be saved in your output directory.
 
-* `feature_selection.ipynb`: specific instructions can be found in the ipython notebook
+* `feature_selection.ipynb`: script for dimensionality reduction (PCA, LR-Lasso, 1D-CNN). Specific instructions can be found in the ipython notebook.
