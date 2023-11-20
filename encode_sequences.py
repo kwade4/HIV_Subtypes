@@ -11,25 +11,19 @@ import numpy as np
 DNA_ALPHABET = ['a', 'c', 'g', 't']
 
 
-def ordinal_encode(seqs):
+def ordinal_encode(seq, max_len):
     """
     Encode a DNA sequence using ordinal encoding by right padding the sequences with 0's
-    :param seqs: a list of sequences
-    :return: a numpy array of ordinal encoded sequences
+    :param seq: the sequence
+    :param max_len: the longest sequence in the dataset
+    :return: numpy array representing the encoded sequence
     """
-    ordinal = []
 
-    max_len = max([len(x) for x in seqs])
+    mapping = {'-': 0.0, 'a': 0.25, 't': 0.50, 'c': 0.75, 'g': 1.0}
+    encoded_seq = np.zeros(max_len, dtype=float)
+    encoded_seq[:len(seq)] = [mapping[i] for i in seq]
 
-    for seq in seqs:
-        mapping = {'-': 0.0, 'a': 0.25, 't': 0.50, 'c': 0.75, 'g': 1.0}
-        encoded_seq = np.zeros(max_len, dtype=float)
-
-        encoded_seq[:len(seq)] = [mapping[i] for i in seq]
-
-        ordinal.append(encoded_seq)
-
-    return np.array(ordinal)
+    return encoded_seq
 
 
 def generate_dna_kmers(k):
@@ -302,7 +296,9 @@ if __name__ == '__main__':
             writer.writerow(kmer_freq / kmer_freq.sum())
 
     # Encode each nucleotide as a float between 0 and 1
+    max_len = max([len(x) for x in seqs])
     with open('./ordinal_encoding.csv', 'w+', newline='') as outfile:
         writer = csv.writer(outfile)
-        enc_seq = ordinal_encode(seqs)
-        writer.writerow(enc_seq)
+        for seq in seqs:
+            enc_seq = ordinal_encode(seq, max_len)
+            writer.writerow(enc_seq)
