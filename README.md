@@ -15,9 +15,8 @@
 * Few studies (if any) have compared DNA vectorization methods for HIV-1 subtyping. 
 * Few studies (if any) have applied multi-task learning to HIV-1 subtype classification. 
 
-#### Possible Research Objectives 
+#### Research Objectives 
 * To characterize the effect of DNA sequence vectorization methods on HIV-1 subtyping. 
-* Apply multi-task learning to HIV-1 subtype classification. 
 * Develop an improved HIV-1 subtype classification method. 
 
 #### Methodology 
@@ -30,9 +29,7 @@
     * Other language model encodings
  
 2. Feature selection:
-    * LASSO
-    * PCA
-    * Pre-trained CNN (as Kyle suggested)  
+    * PCA 
 
 3. Machine Learning & Deep Learning  
     * Classical Machine Learning 
@@ -40,11 +37,10 @@
         * Multi-class logistic regression 
         * XGBoost
         * LASSO
-        * Naive Bayes?  
+        * Naive Bayes  
         * KNN clustering 
     * Deep Learning 
         * 1D-CNN 
-    * Multi-task learning (time-permitting)
     
 4. Evaluation Metrics 
     * Confusion Matrix
@@ -52,31 +48,6 @@
     * AUROC, AUPRC
     * Cohen's Kappa 
     
-At our meeting, we had discussed evaluating our models with and without applying feature selection. 
-
-
-#### Distribution of Tasks 
-
-##### Experiments 
-* Processing data - Kaitlyn  
-* Vectorize DNA Sequences** - Gen and Kaitlyn 
-    * Kaitlyn: k-mers, natural (and sub-sequence) vectors
-    * Gen: Word2Vec, other natural language encoding methods 
-* Feature Selection: Alana 
-* Machine Learning and Deep Learning: Kyle - Done!
-* Multi-task Learning - ? 
-
-##### Paper
-* Background and introduction: Kaitlyn 
-* Methods 
-    * Data-processing: Kaitlyn 
-    * Sequence vectorization: Kaitlyn and Gen 
-    * Feature Selection: Alana 
-    * ML/DL: Kyle 
-* Results and Discussion: Kyle 
-* Figures: Kyle  
-
-#### Dataset and Availability 
 
 ##### Dataset 
 * `hiv-db.tar.xz`: contains 20,386 unprocessed sequences from 289 subtypes [LANL HIV Sequence Database](https://www.hiv.lanl.gov/components/sequence/HIV/search/search.html)
